@@ -15,7 +15,8 @@ namespace Cake.Common.Build.VSTS.Data
         /// Initializes a new instance of the <see cref="VSTSEnvironmentInfo"/> class.
         /// </summary>
         /// <param name="environment">The environment.</param>
-        public VSTSEnvironmentInfo(ICakeEnvironment environment) : base(environment)
+        public VSTSEnvironmentInfo(ICakeEnvironment environment)
+            : base(environment)
         {
             Repository = new VSTSRepositoryInfo(environment);
             BuildDefinition = new VSTSDefinitionInfo(environment);

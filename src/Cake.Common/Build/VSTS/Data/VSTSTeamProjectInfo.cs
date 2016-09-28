@@ -10,7 +10,7 @@ namespace Cake.Common.Build.VSTS.Data
     /// <summary>
     /// Provides VSTS Team Project information for the current build
     /// </summary>
-    public class VSTSTeamProjectInfo : VSTSInfo
+    public sealed class VSTSTeamProjectInfo : VSTSInfo
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="VSTSTeamProjectInfo"/> class.

@@ -11,7 +11,7 @@ namespace Cake.Common.Build.VSTS
     /// <summary>
     /// Base class used to provide information about the VSTS environment.
     /// </summary>
-    public class VSTSInfo
+    public abstract class VSTSInfo
     {
         private readonly ICakeEnvironment _environment;
 

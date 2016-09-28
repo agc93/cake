@@ -10,13 +10,14 @@ namespace Cake.Common.Build.VSTS.Data
     /// <summary>
     /// Provides VSTS agent info for the current build and build agent
     /// </summary>
-    public class VSTSAgentInfo : VSTSInfo
+    public sealed class VSTSAgentInfo : VSTSInfo
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="VSTSAgentInfo"/> class.
         /// </summary>
         /// <param name="environment">The environment.</param>
-        public VSTSAgentInfo(ICakeEnvironment environment) : base(environment)
+        public VSTSAgentInfo(ICakeEnvironment environment)
+            : base(environment)
         {
         }
 

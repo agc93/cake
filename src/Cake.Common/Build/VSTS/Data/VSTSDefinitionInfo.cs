@@ -9,13 +9,14 @@ namespace Cake.Common.Build.VSTS.Data
     /// <summary>
     /// Provides VSTS Build Definition information for the current build
     /// </summary>
-    public class VSTSDefinitionInfo : VSTSInfo
+    public sealed class VSTSDefinitionInfo : VSTSInfo
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="VSTSDefinitionInfo"/> class.
         /// </summary>
         /// <param name="environment">The environment.</param>
-        public VSTSDefinitionInfo(ICakeEnvironment environment) : base(environment)
+        public VSTSDefinitionInfo(ICakeEnvironment environment)
+            : base(environment)
         {
         }
 

@@ -9,13 +9,14 @@ namespace Cake.Common.Build.VSTS.Data
     /// <summary>
     /// Provides VSTS Repository information for the current build
     /// </summary>
-    public class VSTSRepositoryInfo : VSTSInfo
+    public sealed class VSTSRepositoryInfo : VSTSInfo
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="VSTSRepositoryInfo"/> class.
         /// </summary>
         /// <param name="environment">The environment.</param>
-        public VSTSRepositoryInfo(ICakeEnvironment environment) : base(environment)
+        public VSTSRepositoryInfo(ICakeEnvironment environment)
+            : base(environment)
         {
         }
 

@@ -8,7 +8,7 @@ using NSubstitute;
 
 namespace Cake.Common.Tests.Fixtures.Build
 {
-    public class VSTSInfoFixture
+    public sealed class VSTSInfoFixture
     {
         public ICakeEnvironment Environment { get; set; }
 
