@@ -14,6 +14,7 @@ using Cake.Common.Build.Jenkins;
 using Cake.Common.Build.MyGet;
 using Cake.Common.Build.TeamCity;
 using Cake.Common.Build.TravisCI;
+using Cake.Common.Build.VSTS;
 
 namespace Cake.Common.Build
 {
